@@ -4,5 +4,7 @@ public class Main {
 
         System.out.println(x.scramble());
 
+        String[] y = new String[2];
+        main(y);
     }
 }

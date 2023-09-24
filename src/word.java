@@ -19,7 +19,6 @@ public class word {
 
         scramble += name.substring(0,1);
         temp += name.substring(1, name.length()-1);
-        System.out.println(temp);
 
         for (int i = 0; i < name.length(); i++){
             int random = (int)(Math.random() * temp.length()-1) + 1;
@@ -30,11 +29,8 @@ public class word {
             }
             else {
                 scramble += temp.charAt(random);
-                System.out.println(scramble);
 
                 temp = temp.substring(0, random) + temp.substring(random + 1);
-                System.out.println(temp);
-                System.out.println();
             }
 
         }
